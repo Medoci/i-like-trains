@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "template"
+name = "case_study"
 version = "0.1.0"
-description = "Default configuration for repositories"
+description = "Train Sales Case Study"
 authors = ["Ben Liddington <liddingtonben@gmail.com>"]
 readme = "README.md"
-packages = [{include = "template"}]
+packages = [{include = "case_study"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
