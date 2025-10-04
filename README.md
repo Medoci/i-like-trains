@@ -9,24 +9,24 @@ You must use Python to complete this assessment. You may also use SQL for perfor
 
 To load the Poetry environment and run the code:
 
-# Install dependencies
+### Install dependencies
 ```bash
 poetry install
 ```
 
-# Activate the virtual environment
+### Activate the virtual environment
 ```bash
 poetry shell
 ```
 
-# Run your analysis scripts or notebooks
+### Run your analysis scripts or notebooks
 ```bash
 python your_script.py
 ```
 
-If using a notebook makre sure you set the kernal to the poetry env you have created.
+***If using a notebook makre sure you set the kernal to the poetry env you have created***
 
-# Find you poetry env
+### Find you poetry env
 ```bash
 poetry env list
 ```
