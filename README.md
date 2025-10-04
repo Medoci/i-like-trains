@@ -1,38 +1,28 @@
-# Template
-A repository formatting the standard template of a project
+# Data Science Case Study
 
-*Please replace this description with the purpose of this repository*
+The purpose of this assessment is to understand how you approach analysis and the application of data science to a business problem.
 
-## Developer Guidance
+You must use Python to complete this assessment. You may also use SQL for performing queries and data modelling
 
-This package uses `poetry` as a dependancy manager please refer to the documentation [poetry-docs](https://python-poetry.org).
-It creates a package specifc `venv` to handle and resolve dependancies. By default the venv is established in 
-...\AppData\Local\pypoetry\Cache\virtualenvs\template-aoXx48YX-py3.11\Scripts\python.exe
+## 1. Problem Statement
 
-To get started and create a `venv` run the following...
+You are a Data Scientist at a leading UK travel company. The business wants to grow ticket sales across its network of train stations, but marketing and infrastructure budgets are limited. Leadership needs to know where to invest to maximise returns — whether that’s through marketing campaigns, station improvements, or better allocation of existing resources.
 
-``` sh
-poetry install
-```
+To support this, you are given two datasets:
+- station_sales.csv – daily ticket sales data for a selection of UK stations (simulated, with realistic seasonal patterns).
+- station_location.csv – information on station location, and operator.
 
-To modify dependant packages 
-``` sh
-poetry add pandas
-poetry remove pandas
-```
+## 2. The Ask:
 
-For packages used in development
-``` sh
-poetry add flake8 --dev
-poetry remove flake8
-```
+### Q1: Understanding the Market
+- How has sales growth trended across stations and regions over time?
+- Are there certain stations or regions that stand out — either as growth leaders or as underperformers?
+- What are the key seasonal patterns (weekly and annual)?
+- Based on this, can you build a baseline forecast for the next 12 months? (You can choose any methodology — statistical or ML — but be ready to explain your choice.)
 
-For debugging and to check versioning without relying on the kernel you can launch Visual Studio code from the shell
-``` sh
-poetry shell
-code .
-```
+### Q2: Exploring Data Science Use Cases
+Looking beyond descriptive analysis and forecasting, what machine learning use cases could be tested on this data?
+Select a use case and prototype a model to demonstrate the application of data science to solving their problem. You could explore looking at adding external information if you may please, but you won’t be strictly evaluated on it. You are not evaluated on the accuracy or performance of the model, but more so on your approach.
 
-## Running guidance
-
-*Please replace this description with how to run and navigate the project
+### Q3: Recommendations for the Business
+Based on our analysis, what key insights should the business act on and why? What other data would you use to help support your case if available.
