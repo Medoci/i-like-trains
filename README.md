@@ -4,6 +4,34 @@ The purpose of this assessment is to understand how you approach analysis and th
 
 You must use Python to complete this assessment. You may also use SQL for performing queries and data modelling
 
+
+## Poetry
+
+To load the Poetry environment and run the code:
+
+# Install dependencies
+```bash
+poetry install
+```
+
+# Activate the virtual environment
+```bash
+poetry shell
+```
+
+# Run your analysis scripts or notebooks
+```bash
+python your_script.py
+```
+
+If using a notebook makre sure you set the kernal to the poetry env you have created.
+
+# Find you poetry env
+```bash
+poetry env list
+```
+
+
 ## 1. Problem Statement
 
 You are a Data Scientist at a leading UK travel company. The business wants to grow ticket sales across its network of train stations, but marketing and infrastructure budgets are limited. Leadership needs to know where to invest to maximise returns — whether that’s through marketing campaigns, station improvements, or better allocation of existing resources.
