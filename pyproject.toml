@@ -4,21 +4,32 @@ version = "0.1.0"
 description = "Train Sales Case Study"
 authors = ["Ben Liddington <liddingtonben@gmail.com>"]
 readme = "README.md"
-packages = [{include = "case_study"}]
+packages = [{ include = "case_study" }]
 
 [tool.poetry.dependencies]
-python = "^3.11"
-pandas = "^2.2.1"
-numpy = "^1.26.4"
-mlflow = "^2.10.2"
-pytest = "^8.0.1"
-flake8 = "^7.0.0"
-pre-commit = "^3.6.2"
-scikit-learn = "^1.4.1.post1"
-nbformat = "^5.9.2"
-ipykernel = "^6.29.2"
-pytest-cov = "^4.1.0"
+python = ">=3.11,<3.13"
+numpy = "^1.26"
+pandas = "^2.2"
+scikit-learn = "^1.4"
+matplotlib = "^3.8"
+seaborn = "^0.13"
+statsmodels = "^0.14"
+xgboost = "^1.8"
+lightgbm = "^4.4"
+mlflow = { version = "^2.14", optional = true }
+pyarrow = { version = "^17.0", optional = true }
 
+[tool.poetry.extras]
+tracking = ["mlflow"]
+parquet = ["pyarrow"]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
+pytest-cov = "^4.1"
+flake8 = "^7.0"
+pre-commit = "^3.6"
+ipykernel = "^6.29"
+nbformat = "^5.9"
 
 [build-system]
 requires = ["poetry-core"]
