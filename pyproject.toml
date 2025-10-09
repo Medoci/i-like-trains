@@ -14,7 +14,6 @@ scikit-learn = "^1.4"
 matplotlib = "^3.8"
 seaborn = "^0.13"
 statsmodels = "^0.14"
-xgboost = { version = ">=2.0,<3.0", optional = true }
 mlflow  = { version = "^2.14", optional = true }
 pyarrow = { version = "^17.0", optional = true }
 shapely = "^2.1.2"
@@ -23,6 +22,9 @@ holidays = "^0.81"
 geopy = "^2.4.1"
 rapidfuzz = "^3.14.1"
 tqdm = "^4.67.1"
+jinja2 = "^3.1.6"
+xgboost = "^3.0.5"
+prophet = "^1.1.7"
 
 [tool.poetry.extras]
 gbt = ["xgboost"]
